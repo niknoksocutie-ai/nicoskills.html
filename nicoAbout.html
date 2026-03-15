@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            height: 110vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #B0E0E6, #87CEEB, #4682B4);
+        }
+
+        .card {
+            width: 100%;
+            max-width: 500px;
+            padding: 40px;
+            border-radius: 25px;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+            color: #333333;
+        }
+
+        .card h2 {
+            font-size: 36px;
+            color: #000080;
+            margin-bottom: 30px;
+        }
+
+        .skills {
+            list-style: none;
+        }
+
+        .skills li {
+            font-size: 22px;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        .skills li::before {
+            content: "✔";
+            margin-right: 15px;
+            font-size: 22px;
+            color: white;
+        }
+
+        @media (max-width: 480px) {
+            .card h2 {
+                font-size: 28px;
+            }
+
+            .skills li {
+                font-size: 35px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card" style="background-color: #F7F7E4">
+        <h2>Personal Information</h2>
+        <ul style="list-style-type: none;">
+        ‎<li style="font-family: 'serif';"><mark>Name:</mark> Nico S. Hernandez</li>
+        <li><mark>Age:</mark>16</li>
+        <li><mark>Location:</mark>Taal,Bocaue,Bulacan</li>
+        
+        <h2></h2>
+        </ul>
+        <ul style="list-style-type: none;">
+            <li style="font-family:'serif';"><mark>I am studying Computer Programming (CP)</mark></li>
+        </ul>
+    <!-- Image Box -->
+<div class="image-box" style="width:300px; height:200px; border-radius:15px; overflow:hidden;">
+    <img src="Screenshot_20260315-122425.jpg" alt="Profile Picture" style="width:90%; height:80%; object-fit:cover;">
+    
+</div>
+    </div>
+
+</body>
+</html>

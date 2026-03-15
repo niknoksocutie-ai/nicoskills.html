@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Hobbies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #E3FA64, #F6FCD4, #D6E374);
+        }
+
+        .card {
+            width: 90%;
+            max-width: 500px;
+            padding: 40px;
+            border-radius: 25px;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+            color: royalblue;
+        }
+
+        .card h2 {
+            font-size: 36px;
+            color: #00c6ff;
+            margin-bottom: 30px;
+        }
+
+        .skills {
+            list-style: none;
+        }
+
+        .skills li {
+            font-size: 30px;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+        }
+
+        .skills li::before {
+            content: "✔";
+            margin-right: 15px;
+            font-size: 22px;
+            color: black;
+        }
+
+        @media (max-width: 480px) {
+            .card h2 {
+                font-size: 30px;
+            }
+
+            .skills li {
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <h2>My Hobbies</h2>
+
+    <ul class="Skills">
+        <li>Playing Basketball</li>
+    </ul>
+
+<!-- Image Box -->
+<div class="image-box" style="width:300px; height:200px; border-radius:15px; overflow:hidden;">
+    <img src="Screenshot_20260302-223736.jpg" 
+         alt="Profile Picture"
+         style="width:90%; height:80%; object-fit:cover;">
+</div>
+<ul class="Hobbies">
+    <li>Playing Mobile Games</li>
+</ul>
+
+<!-- Image Box -->
+<div class="image-box" style="width:300px; height:200px; border-radius:15px; overflow:hidden;">
+    <img src="Screenshot_20260302-224513.jpg" 
+         alt="Profile Picture"
+         style="width:90%; height:80%; object-fit:cover;">
+</div>
+</div>
+
+</body>
+</html>
